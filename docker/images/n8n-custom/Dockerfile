@@ -43,5 +43,9 @@ RUN \
 	chown node:node .n8n
 
 ENV SHELL /bin/sh
+
+ENV TZ="Asia/Tehran"
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 USER node
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
