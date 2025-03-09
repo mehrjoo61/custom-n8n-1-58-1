@@ -17,7 +17,16 @@ const commonChildRoutes: RouteRecordRaw[] = [
 			middleware: ['authenticated'],
 		},
 	},
-	
+	{
+		path: 'credentials',
+		components: {
+			default: CredentialsView,
+			sidebar: MainSidebar,
+		},
+		meta: {
+			middleware: ['authenticated'],
+		},
+	},
 ];
 
 const commonChildRouteExtensions = {

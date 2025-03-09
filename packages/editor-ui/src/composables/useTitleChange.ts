@@ -20,7 +20,7 @@ export function useTitleChange() {
 	};
 
 	const titleReset = () => {
-		window.document.title = prependBeta('Novin Marketing Automation');
+		window.document.title = prependBeta('UNEXO Automation');
 	};
 
 	return {
